@@ -8,3 +8,10 @@ cc_library {
     name: "libcamera_shim",
     srcs: ["libcamera.c"],
 }
+
+cc_library {
+    name: "citsensorservice_shim",
+    srcs: ["citsensorservice.c"],
+    stem: "citsensorservice_shim",
+    vendor: true,
+}
